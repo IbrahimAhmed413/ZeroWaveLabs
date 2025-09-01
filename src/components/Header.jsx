@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
-import "../styles/Header.css"
+import "../styles/Header.css";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -37,17 +37,17 @@ const Header = () => {
         { name: "No Code Development", link: "nocode_page" },
         { name: "Code Stacks", link: "codestack_page" },
         { name: "AI and Analytics", link: "AI_page" },
-        { name: "Managed Cloud and Devops", link: "Managecloud_page" },
+        { name: "Managed Cloud and Devops", link: "Manage_page" },
       ],
     },
   ];
 
   const HeaderData = [
-    { name: "Our Expertise" },
-    { name: "Customer Success" },
-    { name: "Blogs" },
-    { name: "Careers" },
-    { name: "About Us" },
+    { name: "Our Expertise", link: "Ourexp" },
+    { name: "Customer Success", link: "Customer" },
+    { name: "Blogs", link: "blog" },
+    { name: "Careers", link: "Careers" },
+    { name: "About Us", link: "AboutUs" },
   ];
 
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -89,9 +89,9 @@ const Header = () => {
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={onMouseOut}
           >
-            <a className="anchor"  onClick={(e) => e.preventDefault()}>
+            <p className="anchor" onClick={(e) => e.preventDefault()}>
               {item.name} <FaChevronDown />
-            </a>
+            </p>
 
             {activeDropdown === index && (
               <div className="Dropdown-menu">
@@ -108,7 +108,7 @@ const Header = () => {
         {/* Static header items */}
         {HeaderData.map((e, index) => (
           <span key={index} className="service-links">
-            <a className="anchor">
+            <a className="anchor" href={e.link}>
               {e.name}
             </a>
           </span>
@@ -131,20 +131,32 @@ const Header = () => {
           {/* Mobile Dropdown menus */}
           {navItems.map((item, index) => (
             <div key={index} className="mobile-dropdown-container">
-              <div 
+              <div
                 className="mobile-anchor-container"
                 onClick={() => toggleMobileDropdown(index)}
               >
-                <a className="mobile-anchor"  onClick={(e) => e.preventDefault()}>
+                <a
+                  className="mobile-anchor"
+                  href=""
+                  onClick={(e) => e.preventDefault()}
+                >
                   {item.name}
                 </a>
-                <FaChevronDown className={`mobile-chevron ${activeDropdown === index ? "rotated" : ""}`} />
+                <FaChevronDown
+                  className={`mobile-chevron ${
+                    activeDropdown === index ? "rotated" : ""
+                  }`}
+                />
               </div>
 
               {activeDropdown === index && (
                 <div className="mobile-dropdown-menu">
                   {item.dropdown.map((subItem, i) => (
-                    <a key={i} href={subItem.link} className="mobile-dropdown-item">
+                    <a
+                      key={i}
+                      href={subItem.link}
+                      className="mobile-dropdown-item"
+                    >
                       {subItem.name}
                     </a>
                   ))}
@@ -156,7 +168,7 @@ const Header = () => {
           {/* Mobile Static header items */}
           {HeaderData.map((e, index) => (
             <div key={index} className="mobile-service-links">
-              <a className="mobile-anchor" >
+              <a className="mobile-anchor" href="">
                 {e.name}
               </a>
             </div>
@@ -165,7 +177,9 @@ const Header = () => {
       </div>
 
       {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && <div className="mobile-menu-overlay" onClick={toggleMobileMenu}></div>}
+      {isMobileMenuOpen && (
+        <div className="mobile-menu-overlay" onClick={toggleMobileMenu}></div>
+      )}
     </div>
   );
 };
