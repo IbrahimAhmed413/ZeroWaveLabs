@@ -135,13 +135,12 @@ const Header = () => {
                 className="mobile-anchor-container"
                 onClick={() => toggleMobileDropdown(index)}
               >
-                <a
+                <p
                   className="mobile-anchor"
-                  href=""
                   onClick={(e) => e.preventDefault()}
                 >
                   {item.name}
-                </a>
+                </p>
                 <FaChevronDown
                   className={`mobile-chevron ${
                     activeDropdown === index ? "rotated" : ""
@@ -168,7 +167,7 @@ const Header = () => {
           {/* Mobile Static header items */}
           {HeaderData.map((e, index) => (
             <div key={index} className="mobile-service-links">
-              <a className="mobile-anchor" href="">
+              <a className="mobile-anchor" href={e.link}>
                 {e.name}
               </a>
             </div>
