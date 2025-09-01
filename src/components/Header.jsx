@@ -22,22 +22,22 @@ const Header = () => {
     {
       name: "Services",
       dropdown: [
-        { name: "UI/UX Design", link: "" },
-        { name: "Mobile App Development", link: "" },
-        { name: "Web App Development", link: "" },
-        { name: "Artificial Intelligence (AI)", link: "" },
-        { name: "Data Analytics and Data Science", link: "" },
-        { name: "Cloud and DevOps", link: "" },
-        { name: "Google Workspace", link: "" },
+        { name: "UI/UX Design", link: "UI/UX_page" },
+        { name: "Mobile App Development", link: "MAD_page" },
+        { name: "Web App Development", link: "WEB_page" },
+        { name: "Artificial Intelligence (AI)", link: "AI_page" },
+        { name: "Data Analytics and Data Science", link: "DA_page" },
+        { name: "Cloud and DevOps", link: "Cloud_page" },
+        { name: "Google Workspace", link: "Google_page" },
       ],
     },
     {
       name: "Hire Developer",
       dropdown: [
-        { name: "No Code Development", link: "" },
-        { name: "Code Stacks", link: "" },
-        { name: "AI and Analytics", link: "" },
-        { name: "Managed Cloud and Devops", link: "" },
+        { name: "No Code Development", link: "nocode_page" },
+        { name: "Code Stacks", link: "codestack_page" },
+        { name: "AI and Analytics", link: "AI_page" },
+        { name: "Managed Cloud and Devops", link: "Managecloud_page" },
       ],
     },
   ];
@@ -89,7 +89,7 @@ const Header = () => {
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={onMouseOut}
           >
-            <a className="anchor" href="" onClick={(e) => e.preventDefault()}>
+            <a className="anchor"  onClick={(e) => e.preventDefault()}>
               {item.name} <FaChevronDown />
             </a>
 
@@ -108,7 +108,7 @@ const Header = () => {
         {/* Static header items */}
         {HeaderData.map((e, index) => (
           <span key={index} className="service-links">
-            <a className="anchor" href="">
+            <a className="anchor">
               {e.name}
             </a>
           </span>
@@ -135,7 +135,7 @@ const Header = () => {
                 className="mobile-anchor-container"
                 onClick={() => toggleMobileDropdown(index)}
               >
-                <a className="mobile-anchor" href="" onClick={(e) => e.preventDefault()}>
+                <a className="mobile-anchor"  onClick={(e) => e.preventDefault()}>
                   {item.name}
                 </a>
                 <FaChevronDown className={`mobile-chevron ${activeDropdown === index ? "rotated" : ""}`} />
@@ -156,7 +156,7 @@ const Header = () => {
           {/* Mobile Static header items */}
           {HeaderData.map((e, index) => (
             <div key={index} className="mobile-service-links">
-              <a className="mobile-anchor" href="">
+              <a className="mobile-anchor" >
                 {e.name}
               </a>
             </div>
