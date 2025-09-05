@@ -28,13 +28,19 @@
 
 /* Logo styling */
 .logo {
+  
+  width: 330px;
+  height: 50px;
+  overflow: hidden;
   padding-left: 7%;
 }
-.logo.scrolled{
-  padding-left: 2%;
+.logo.scrolled {
+  margin-top: 1%;
+  padding-left: 0%;
+  margin-bottom: 0%;
 }
-.buttondiv.scrolled{
-  padding-right:2% ;
+.buttondiv.scrolled {
+  padding-right: 2%;
 }
 /* Button container */
 .buttondiv {
