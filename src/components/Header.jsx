@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import "../styles/Header.css";
 import Logo from "../assets/Logo.png";
-import { useNavigate } from "react-router-dom";
 import { HeaderData, navItems } from "./HeaderData";
 const Header = () => {
 
