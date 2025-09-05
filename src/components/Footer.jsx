@@ -96,16 +96,16 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="social-icons">
-          <a href="#">
+          <a >
             <FaLinkedin />
           </a>
-          <a href="#">
+          <a >
             <FaInstagram />
           </a>
-          <a href="#">
+          <a >
             <FaFacebook />
           </a>
-          <a href="#">
+          <a >
             <FaXTwitter />
           </a>
         </div>
