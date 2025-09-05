@@ -50,8 +50,8 @@
 }
 
 .footer-links li:hover {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
 }
 
 .footer-links p {
