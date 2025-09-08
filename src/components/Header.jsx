@@ -3,8 +3,8 @@ import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import "../styles/Header.css";
 import Logo from "../assets/Logo.png";
 import { HeaderData, navItems } from "./HeaderData";
+import { Link } from "react-router-dom";
 const Header = () => {
-
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -41,11 +41,13 @@ const Header = () => {
   return (
     <div className={`mainheader ${isScrolled ? "scrolled" : ""}`}>
       <div className={`logo ${isScrolled ? "scrolled" : ""}`} >
-        <img
+       <Link to="/">
+         <img
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
           src={Logo}
           alt="Logo"
         />
+       </Link>
       </div>
 
       {/* Desktop Navigation */}
@@ -83,7 +85,7 @@ const Header = () => {
           </span>
         ))}
       </div>
-
+      
       {/* Desktop Contact Button */}
       <div className={`buttondiv ${isScrolled ? "scrolled" : ""}`}>
         <button className="button">Contact</button>

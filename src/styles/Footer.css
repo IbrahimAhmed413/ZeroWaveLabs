@@ -3,7 +3,8 @@
   color: #fff;
   padding: 40px;
   font-family: Arial, sans-serif;
-  padding-top: 5%;
+  padding-top: 5% !important;
+  margin-left: 0% !important;
 }
 
 .footer-top {
@@ -66,14 +67,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: end;
+
 }
 
 .social-icons a {
-  border: 1px solid white;
-  border-radius: 50px;
-  padding: 10px;
+  padding: 3px;
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   margin-right: 15px;
   transition: 0.3s;
 }

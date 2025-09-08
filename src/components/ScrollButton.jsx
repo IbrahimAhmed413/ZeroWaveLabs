@@ -17,17 +17,18 @@ const ButtonCard = () => {
   const maxScroll = 550;
   const clampedScroll = Math.min(scrollY, maxScroll);
 
-  // Map scroll → margin (0% to 5%)
-  const marginPercent = (clampedScroll / maxScroll) * 5;
-  console.log(scrollY)
+  // Map scroll → width (start 60% → 100%)
+  const minWidth = 60; // 60% width at top
+  const maxWidth = 100; // full width
+  const widthPercent = minWidth + (clampedScroll / maxScroll) * (maxWidth - minWidth);
+
   return (
     <div className="mainDiv">
       <div
         className="card-container"
         style={{
-          marginLeft: `${-marginPercent}%`,
-          marginRight: `${-marginPercent}%`,
-          transition: "margin 0.05s ease-out"
+          width: `${widthPercent}%`,
+          transition: "width 0.05s ease-out",
         }}
       >
         <div className="card">

@@ -1,9 +1,11 @@
+import { Calendar, Briefcase, Copy, Users, Star } from "lucide-react";
+
 export const HeaderData = [
-  { name: "Our Expertise", link: "Ourexp" },
-  { name: "Customer Success", link: "Customer" },
-  { name: "Blogs", link: "blog" },
-  { name: "Careers", link: "Careers" },
-  { name: "About Us", link: "AboutUs" },
+  // { name: "Our Expertise", link: "Ourexp" },
+  { name: "Free Resources", link: "/resources" },
+  { name: "Blogs", link: "/blog" },
+  { name: "Projects", link: "/projects" },
+  { name: "About Us", link: "/aboutUs" },
 ];
 
 export const navItems = [
@@ -27,5 +29,48 @@ export const navItems = [
       { name: "AI and Analytics", link: "AI_page" },
       { name: "Managed Cloud and Devops", link: "Manage_page" },
     ],
+  },
+];
+
+export const statsData = [
+  {
+    id: 1,
+    icon: <Calendar size={24} />,
+    number: "11+",
+    label: "Years Of Experience",
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+  },
+  {
+    id: 2,
+    icon: <Briefcase size={24} />,
+    number: "350+",
+    label: "Products Delivered",
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+  },
+  {
+    id: 3,
+    icon: <Copy size={24} />,
+    number: "50+",
+    label: "NoCode Products Delivered",
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+  },
+  {
+    id: 4,
+    icon: <Users size={24} />,
+    number: "90+",
+    label: "Team Members",
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+  },
+  {
+    id: 5,
+    icon: <Star size={24} />,
+    number: "200+",
+    label: "Happy Customers",
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
   },
 ];

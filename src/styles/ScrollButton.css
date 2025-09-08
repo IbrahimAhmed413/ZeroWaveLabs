@@ -1,14 +1,13 @@
-/* Centered container */
 .mainDiv {
+  position: relative;
   min-height: 100vh;
   background: #000000;
   opacity: 97%;
-  padding-left: 10%;
-  padding-right: 10%;
-  /* display: flex; */
+  display: flex;
   justify-content: center;
-  overflow: hidden;
+ 
 }
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -16,8 +15,9 @@
   justify-content: center;
   min-height: 100vh;
   background: #e9ecf1;
-  opacity: 90;
   border-radius: 16px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  transition: width 0.2s ease-out;
 }
 
 /* Card styling */
@@ -30,7 +30,7 @@
   align-items: center;
   width: 120px;
   height: 60px;
-  transition: padding 0.5s linear;
+  transition: all 0.5s linear;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 

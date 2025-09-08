@@ -1,0 +1,149 @@
+.main-div {
+  font-family: Satoshi, Arial, sans-serif;
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 60px;
+  padding: 20%;
+  padding-top:10% ;
+  padding-bottom: 5%;
+  border: 1px solid white;
+  text-align: center;
+  overflow: visible;
+}
+
+.stats-container {
+  padding: 0px 60px !important;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}   
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(226, 232, 240, 0.5);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+.stat-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px auto;
+  transition: all 0.3s ease;
+}
+
+.icon-emoji {
+  font-size: 24px;
+}
+
+.bg-blue-100 {
+  background-color: #dbeafe;
+}
+
+.text-blue-600 {
+  color: #2563eb;
+}
+
+.stat-card:hover .stat-icon {
+  transform: scale(1.1);
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 12px;
+  line-height: 1;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #64748b;
+  font-weight: 500;
+  line-height: 1.4;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats-container {
+    padding: 40px 16px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 400px;
+  }
+  
+  .stat-card {
+    padding: 24px 20px;
+  }
+  
+  .stat-number {
+    font-size: 40px;
+  }
+  
+  .stat-label {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-number {
+    font-size: 36px;
+  }
+  
+  .stat-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Animation for numbers when component loads */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stat-card {
+  animation: countUp 0.6s ease forwards;
+}
+
+.stat-card:nth-child(1) { animation-delay: 0.1s; }
+.stat-card:nth-child(2) { animation-delay: 0.2s; }
+.stat-card:nth-child(3) { animation-delay: 0.3s; }
+.stat-card:nth-child(4) { animation-delay: 0.4s; }
+.stat-card:nth-child(5) { animation-delay: 0.5s; }

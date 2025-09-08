@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="footer-links">
           <div>
             <h4>Quick Links</h4>
-            <ul style={{ color: "grey"  }}>
+            <ul style={{ color: "grey" }}>
               <li>Home</li>
               <li>About Us</li>
               <li>Customer Success Stories</li>
@@ -96,9 +96,9 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="social-icons">
-          <a href="nowhere">
-            <FaLinkedin />
-          </a>
+            <a href="nowhere">
+              <FaLinkedin />
+            </a>
           <a href="nowhere">
             <FaInstagram />
           </a>
