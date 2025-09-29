@@ -16,9 +16,7 @@ const Hero = () => {
       {/* Main content */}
       <div className="hero-content">
         <h2 className="hero-title">
-          Software Development Company for
-          <br />
-          Scalable & Innovative Solutions
+          Smart Resources. Smarter Services.
         </h2>
 
         <p className="hero-subtitle">
