@@ -2,7 +2,6 @@ import { Calendar, Briefcase, Copy, Users, Star } from "lucide-react";
 
 export const HeaderData = [
   // { name: "Our Expertise", link: "Ourexp" },
-  { name: "Free Resources", link: "/resources" },
   { name: "Blogs", link: "/blog" },
   { name: "Projects", link: "/projects" },
   { name: "About Us", link: "/aboutUs" },
@@ -28,6 +27,14 @@ export const navItems = [
       { name: "Code Stacks", link: "codestack_page" },
       { name: "AI and Analytics", link: "AI_page" },
       { name: "Managed Cloud and Devops", link: "Manage_page" },
+    ],
+  },
+  {
+    name: "Free Resources",
+    dropdown: [
+      { name: "Python Tools", link: "/pythonToolsPage" },
+      { name: "Web Templates", link: "codestack_page" },
+      { name: "3D Models", link: "AI_page" },
     ],
   },
 ];
