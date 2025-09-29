@@ -1,5 +1,4 @@
 import React from "react";
-
 const ProjectsPage = () => {
   const projects = [
     {
@@ -26,7 +25,8 @@ const ProjectsPage = () => {
   ];
 
   return (
-    <div style={{ backgroundColor: "white", color: "black", padding: "5rem" }}>
+    <>
+      <div style={{ backgroundColor: "white", color: "black", padding: "5rem" }}>
       <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>🚀 Projects</h1>
 
       <div
@@ -79,7 +79,9 @@ const ProjectsPage = () => {
         ))}
       </div>
     </div>
-  );
+
+    </>
+   );
 };
 
 export default ProjectsPage;

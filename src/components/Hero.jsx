@@ -1,6 +1,8 @@
-import React from "react";
 import "../styles/HeroSection.css";
+import { useNavigate } from "react-router-dom";
+
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div className="hero-section">
       {/* Background geometric elements */}
@@ -23,7 +25,7 @@ const Hero = () => {
           From Vision To Execution, Accelerated With Unico Connect
         </p>
 
-        <button className="start-project-btn">Start Project</button>
+        <button className="start-project-btn" onClick={() => navigate("/contact")}>Contact us</button>
       </div>
 
       {/* Fixed bottom right button */}

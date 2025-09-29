@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import "../styles/Header.css";
 import Logo from "../assets/Logo.png";
 import { HeaderData, navItems } from "./HeaderData";
 import { Link } from "react-router-dom";
 const Header = () => {
+   const navigate = useNavigate();
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -39,6 +42,7 @@ const Header = () => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
   return (
+
     <div className={`mainheader ${isScrolled ? "scrolled" : ""}`}>
       <div className={`logo ${isScrolled ? "scrolled" : ""}`} >
        <Link to="/">
@@ -88,7 +92,7 @@ const Header = () => {
       
       {/* Desktop Contact Button */}
       <div className={`buttondiv ${isScrolled ? "scrolled" : ""}`}>
-        <button className="button">Contact</button>
+        <button className="button" onClick={() => navigate("/contact")}>Contact</button>
       </div>
 
       {/* Mobile Menu Toggle */}
