@@ -2,12 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 40px;
+  gap: 20%;
   padding: 7%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: auto;
-  background: #fff;
-  color: #333;
+  background: linear-gradient(135deg, #041F1C, #062521);
+  color: #E0F2EF;
+  /* color: #333; */
   font-family: Arial, sans-serif;
 }
 
@@ -92,7 +93,7 @@
 
 .office h4 {
   margin-bottom: 5px;
-  color: #333;
+  /* color: #333; */
 }
 
 /* 🌐 Responsive Styles */

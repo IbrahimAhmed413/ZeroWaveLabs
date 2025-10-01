@@ -1,5 +1,9 @@
 .uiux-section {
-  background: #0b0b0b;
+  /* Header & Footer */
+  background: linear-gradient(135deg, #041F1C, #062521);
+  color: #E0F2EF;
+  /* soft minty white for text */
+
   color: #fff;
   padding: 80px 10%;
   display: flex;
@@ -124,15 +128,15 @@
   .uiux-section {
     padding: 60px 5%;
   }
-  
+
   .uiux-container {
     gap: 40px;
   }
-  
+
   .uiux-title {
     font-size: 2rem;
   }
-  
+
   .uiux-card {
     width: 320px;
     padding: 25px;
@@ -144,34 +148,34 @@
   .uiux-section {
     padding: 50px 5%;
   }
-  
+
   .uiux-container {
     flex-direction: column;
     gap: 40px;
   }
-  
+
   .uiux-left {
     max-width: 100%;
     text-align: center;
   }
-  
+
   .uiux-step {
     font-size: 1.3rem;
   }
-  
+
   .uiux-title {
     font-size: 1.8rem;
   }
-  
+
   .uiux-description {
     font-size: 1rem;
     line-height: 1.6;
   }
-  
+
   .uiux-right {
     width: 100%;
   }
-  
+
   .uiux-card {
     width: 100%;
     max-width: 400px;
@@ -183,68 +187,68 @@
   .uiux-section {
     padding: 40px 5%;
   }
-  
+
   .uiux-container {
     gap: 30px;
   }
-  
+
   .uiux-step {
     font-size: 1.1rem;
     margin-bottom: 8px;
   }
-  
+
   .uiux-title {
     font-size: 1.5rem;
     margin-bottom: 15px;
   }
-  
+
   .uiux-description {
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 25px;
   }
-  
+
   .uiux-btn {
     padding: 10px 24px;
     font-size: 0.95rem;
     width: 100%;
     max-width: 250px;
   }
-  
+
   .uiux-card {
     padding: 20px;
     border-radius: 16px;
   }
-  
+
   .uiux-block {
     padding: 15px;
     margin-bottom: 15px;
   }
-  
+
   .uiux-block h3 {
     font-size: 1.3rem;
   }
-  
+
   .uiux-block p {
     font-size: 0.9rem;
   }
-  
+
   .uiux-screen {
     height: 180px;
     padding: 15px;
   }
-  
+
   .uiux-placeholder {
     height: 50px;
     margin-bottom: 12px;
   }
-  
+
   .uiux-thumbnail {
     width: 70px;
     height: 50px;
     margin-bottom: 12px;
   }
-  
+
   .uiux-line {
     height: 6px;
     margin-bottom: 8px;
@@ -256,27 +260,27 @@
   .uiux-section {
     padding: 30px 4%;
   }
-  
+
   .uiux-title {
     font-size: 1.3rem;
   }
-  
+
   .uiux-description {
     font-size: 0.9rem;
   }
-  
+
   .uiux-card {
     padding: 16px;
   }
-  
+
   .uiux-block {
     padding: 12px;
   }
-  
+
   .uiux-block h3 {
     font-size: 1.2rem;
   }
-  
+
   .uiux-screen {
     height: 160px;
   }

@@ -1,6 +1,7 @@
 /* Main header styling */
 .mainheader {
-  background-color: black;
+  background: linear-gradient(135deg, #041F1C, #062521);
+  color: #E0F2EF;
   padding-top: 5px;
   width: 100%;
   display: flex;
@@ -11,10 +12,14 @@
   z-index: 1000;
   transition: all 0.6s ease;
 }
+
 .mainheader.scrolled {
-  padding: 0px 10px; /* smaller height */
-  background-color: #111; /* darker background */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* subtle shadow */
+  padding: 0px 10px;
+  /* smaller height */
+  background-color: #111;
+  /* darker background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  /* subtle shadow */
 }
 
 /* Links container */
@@ -33,18 +38,22 @@
   overflow: hidden;
   padding-left: 7%;
 }
+
 .logo.scrolled {
   margin-top: 1%;
   padding-left: 0%;
   margin-bottom: 0%;
 }
+
 .buttondiv.scrolled {
   padding-right: 2%;
 }
+
 /* Button container */
 .buttondiv {
   padding-right: 7%;
 }
+
 .Dropdown-menu {
   position: absolute;
   top: 120%;
@@ -76,8 +85,10 @@
 
 /* Hover Effect */
 .dropdown-link:hover {
-  background: rgba(255, 255, 255, 0.08); /* subtle dark grey highlight */
-  color: #fff; /* keep white text */
+  background: rgba(255, 255, 255, 0.08);
+  /* subtle dark grey highlight */
+  color: #fff;
+  /* keep white text */
 }
 
 /* Contact button styling */
@@ -132,6 +143,7 @@
   /* transform: rotate(180deg); */
   color: #1a8ef7;
 }
+
 .dropdown-container {
   position: relative;
   display: flex;
@@ -216,7 +228,8 @@
 
   .logo {
     padding-left: 5%;
-    flex: 1; /* Takes up available space to push toggle to right */
+    flex: 1;
+    /* Takes up available space to push toggle to right */
   }
 
   .logo.scrolled {
@@ -265,7 +278,7 @@
     transition: all 0.3s ease;
   }
 
-  .mobile-menu.open + .mobile-menu-overlay {
+  .mobile-menu.open+.mobile-menu-overlay {
     opacity: 1;
     visibility: visible;
   }

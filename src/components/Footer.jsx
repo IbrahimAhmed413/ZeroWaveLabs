@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-top">
-        <div className="footer-badges">
+        {/* <div className="footer-badges">
           <img
             src="https://dummyimage.com/100x50/000/fff&text=Clutch"
             alt="Clutch"
@@ -24,7 +24,7 @@ const Footer = () => {
             src="https://dummyimage.com/100x50/000/fff&text=Google+Cloud"
             alt="Google Cloud Partner"
           />
-        </div>
+        </div> */}
 
         <div className="footer-links">
           <div>

@@ -96,8 +96,10 @@
 .meeting-btn:hover {
   background: #0056b3;
 }
+
 .footer {
-  background: #000;
+  background: linear-gradient(135deg, #041F1C, #062521);
+  color: #E0F2EF;
   color: #fff;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
@@ -202,7 +204,7 @@
     width: 100%;
   }
 
-  .footer-links > div {
+  .footer-links>div {
     margin-bottom: 20px;
     width: 100%;
   }

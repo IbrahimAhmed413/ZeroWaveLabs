@@ -8,6 +8,8 @@ import BlogPage from "./Pages/BlogPage";
 import AboutUs from "./Pages/AboutUs";
 import ProjectsPage from "./Pages/ProjectsPage";
 import Contact from "./Pages/Contact";
+import PytonToolsPage from "./Pages/PythonToolsage";
+
 function App() {
   return (
     <>
@@ -20,6 +22,7 @@ function App() {
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/pythonToolsPage" element={<PytonToolsPage />} />
         </Routes>
         <Footer />
       </Router>

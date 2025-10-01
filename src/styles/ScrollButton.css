@@ -1,11 +1,12 @@
 .mainDiv {
   position: relative;
   min-height: 100vh;
-  background: #000000;
+  background: linear-gradient(135deg, #041F1C, #062521);
+  color: #E0F2EF;
   opacity: 97%;
   display: flex;
   justify-content: center;
- 
+
 }
 
 .card-container {
