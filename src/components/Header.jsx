@@ -31,7 +31,7 @@ const Header = () => {
   const onMouseOut = () => {
     setTimeout(() => {
       setActiveDropdown(null);
-    }, 200);
+    }, 300);
   };
 
   const toggleMobileMenu = () => {

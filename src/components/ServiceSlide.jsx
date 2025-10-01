@@ -11,7 +11,7 @@ const ServiceSlide = (props) => {
                         <p className="uiux-description">
                           {props.desc}
                         </p>
-                        <button className="uiux-btn">Know More</button>
+                        {/* <button className="uiux-btn">Know More</button> */}
                     </div>
 
                     <div className="uiux-right">
