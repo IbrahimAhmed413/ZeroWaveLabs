@@ -59,6 +59,8 @@
   top: 200%;
   left: 0;
   /* background-color: rgba(20, 20, 20, 0.95); */
+  background: linear-gradient(135deg, #052925, #082E2A);
+
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;

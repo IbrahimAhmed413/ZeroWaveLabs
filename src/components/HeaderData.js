@@ -25,7 +25,7 @@ export const navItems = [
     name: "Free Resources",
     dropdown: [
       { name: "Python Tools", link: "/pythonToolsPage" },
-      { name: "Web Templates", link: "codestack_page" },
+      { name: "Web Templates", link: "/webTemplatesPage" },
       { name: "3D Models", link: "AI_page" },
     ],
   },

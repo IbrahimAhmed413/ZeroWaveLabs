@@ -9,6 +9,7 @@ import AboutUs from "./Pages/AboutUs";
 import ProjectsPage from "./Pages/ProjectsPage";
 import Contact from "./Pages/Contact";
 import PytonToolsPage from "./Pages/PythonToolsage";
+import WebTemplatesPage from "./Pages/WebTemplates";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/pythonToolsPage" element={<PytonToolsPage />} />
+          <Route path="/webTemplatesPage" element={<WebTemplatesPage />} />
         </Routes>
         <Footer />
       </Router>
