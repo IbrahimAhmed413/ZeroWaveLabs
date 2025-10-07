@@ -1,15 +1,68 @@
-.about{padding:3.5rem 0;background:linear-gradient(135deg,var(--primary-dark),var(--accent-dark))}
-.about-content{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
-.lead{font-size:1.05rem;color:var(--text-secondary);margin-bottom:1rem}
-.about-features{display:grid;gap:1rem}
-.feature-item{display:flex;gap:1rem;align-items:flex-start}
-.feature-icon{width:44px;height:44px;background:rgba(0,212,255,0.08);border-radius:10px;border:1px solid var(--primary-cyan);display:flex;align-items:center;justify-content:center;color:var(--primary-cyan)}
-.feature-text h4{margin-bottom:.3rem}
-.about-image{width:100%;max-width:480px;height:320px;background:linear-gradient(135deg,var(--dark-cyan),var(--primary-cyan));border-radius:16px;box-shadow:0 20px 40px rgba(0,212,255,0.08)}
+.about {
+  margin-top: 70px;
+  padding: 3.5rem 0;
+  background: linear-gradient(135deg, var(--primary-dark), var(--accent-dark))
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem
+}
+
+.about-features {
+  display: grid;
+  gap: 1rem
+}
+
+.feature-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start
+}
+
+.feature-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(0, 212, 255, 0.08);
+  border-radius: 10px;
+  border: 1px solid var(--primary-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-cyan)
+}
+
+.feature-text h4 {
+  margin-bottom: .3rem
+}
+
+.about-image {
+  width: 100%;
+  max-width: 480px;
+  height: 320px;
+  background: linear-gradient(135deg, var(--dark-cyan), var(--primary-cyan));
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.08)
+}
 
 /* Responsive adjustments */
 
-@media(max-width: 768px){
-  .about-content { grid-template-columns: 1fr; text-align:center; }
-  .about-image { margin: 1rem auto; height:200px; }
+@media(max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-image {
+    margin: 1rem auto;
+    height: 200px;
+  }
 }

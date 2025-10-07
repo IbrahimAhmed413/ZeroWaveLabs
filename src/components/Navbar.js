@@ -131,17 +131,17 @@ export default function Navbar() {
         </a>
 
         <ul className={open ? 'nav-links active' : 'nav-links'}>
-          <li><a href="#home" onClick={() => setOpen(false)}>Home</a></li>
-          <li><a href="#services" onClick={() => setOpen(false)}>Services</a></li>
-          <li><a href="#3D Models" onClick={() => setOpen(false)}>3D Models</a></li>
-          <li><a href="#tempelates" onClick={() => setOpen(false)}>Tempelates</a></li>
-          <li><a href="#about" onClick={() => setOpen(false)}>About</a></li>
+          <li><a href="/" onClick={() => setOpen(false)}>Home</a></li>
+          <li><a href="/services" onClick={() => setOpen(false)}>Services</a></li>
+          <li><a href="/3D Models" onClick={() => setOpen(false)}>3D Models</a></li>
+          <li><a href="/tempelates" onClick={() => setOpen(false)}>Tempelates</a></li>
+          <li><a href="/about" onClick={() => setOpen(false)}>About</a></li>
           {/* <li><a href="#portfolio" onClick={() => setOpen(false)}>Portfolio</a></li>
           <li><a href="#team" onClick={() => setOpen(false)}>Team</a></li> */}
-          <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
+          <li><a href="/contact" onClick={() => setOpen(false)}>Contact</a></li>
         </ul>
 
-        <a href="#contact" className="cta-button">Contact Us</a>
+        <a href="/contact" className="cta-button">Contact Us</a>
 
         <div className={open ? 'mobile-menu-toggle active' : 'mobile-menu-toggle'} onClick={() => setOpen(!open)}>
           <span></span><span></span><span></span>
