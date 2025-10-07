@@ -5,7 +5,7 @@ export default function Contact(){
   return (
     <section id="contact" className="contact">
       <div className="section-header container">
-        <h2>Get In <span className="highlight">Touch</span></h2>
+        <h2 style={{color:" var(--primary-cyan)" }}>Get In <span className="highlight">Touch</span></h2>
         <p>Ready to transform your business? Let's discuss your project</p>
       </div>
       <div className="contact-content container">
