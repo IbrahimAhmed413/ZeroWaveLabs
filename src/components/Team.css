@@ -1,0 +1,10 @@
+.team{padding:3.5rem 0;background:var(--secondary-dark)}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.team-member{background:var(--accent-dark);padding:1rem;border-radius:12px;text-align:center;border:1px solid rgba(0,212,255,0.06)}
+.member-avatar{width:90px;height:90px;border-radius:50%;margin:0 auto 0.75rem;display:flex;align-items:center;justify-content:center;font-size:36px;background:linear-gradient(135deg,var(--dark-cyan),var(--primary-cyan));color:var(--primary-dark)}
+
+/* Responsive adjustments */
+
+@media(max-width: 600px){
+  .team-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,10 @@
+.stats{padding:2.5rem 0;background:linear-gradient(90deg,var(--primary-dark),var(--accent-dark))}
+.stats-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;text-align:center}
+.stat-item h3{font-size:2rem;color:var(--primary-cyan);font-weight:600}
+
+/* Responsive adjustments */
+
+@media(max-width: 600px){
+  .stats-container { grid-template-columns: 1fr 1fr; }
+  .stat-item h3 { font-size: 1.5rem; }
+}

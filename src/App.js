@@ -1,33 +1,31 @@
-import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Resources from "./Pages/Resources";
-import HomePage from "./Pages/HomePage";
-import BlogPage from "./Pages/BlogPage";
-import AboutUs from "./Pages/AboutUs";
-import ProjectsPage from "./Pages/ProjectsPage";
-import Contact from "./Pages/Contact";
-import PytonToolsPage from "./Pages/PythonToolsage";
-import WebTemplatesPage from "./Pages/WebTemplates";
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Services from './components/Services';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import TechStack from './components/TechStack';
+import Stats from './components/Stats';
+import Team from './components/Team';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import './App.css';
 
-function App() {
+function App(){
   return (
     <>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/resources" element={<Resources />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/aboutUs" element={<AboutUs />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/pythonToolsPage" element={<PytonToolsPage />} />
-          <Route path="/webTemplatesPage" element={<WebTemplatesPage />} />
-        </Routes>
-        <Footer />
-      </Router>
+      <Navbar />
+      <main style={{marginTop: '70px'}}>
+        <Hero />
+        <Services />
+        <About />
+        <Portfolio />
+        <TechStack />
+        <Stats />
+        <Team />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }
