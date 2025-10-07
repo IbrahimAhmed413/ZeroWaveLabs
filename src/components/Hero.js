@@ -15,7 +15,7 @@ export default function Hero(){
             We blend <strong>creativity with technology</strong>, offering both <strong>free community tools </strong> and <strong>premium client solutions</strong> under one roof.
           </p>
           <div className="hero-buttons">
-              <a className='btn-primary' href='#contact'>Contact Us</a>
+              <a className='btn-primary' href='/contact'>Contact Us</a>
             <a className='btn-secondary' href='#portfolio'>View Our Work</a>
           </div>
         </div>

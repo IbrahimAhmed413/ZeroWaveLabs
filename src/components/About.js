@@ -1,12 +1,13 @@
 import React from 'react';
 import './About.css';
+import AboutVideo from "../assets/AboutVideo.mp4"
 
-export default function About(){
+export default function About() {
   return (
     <section id="about" className="about">
       <div className="about-content container">
         <div className="about-text">
-          <h2 style={{color:" var(--primary-cyan)"}}>About <span className="highlight">ZeroWaveLabs</span></h2>
+          <h2 style={{ color: " var(--primary-cyan)" }}>About <span className="highlight">ZeroWaveLabs</span></h2>
           <p className="lead">At <strong>ZeroWaveLabs</strong>, we believe great ideas should never be held back by limited resources.</p>
           <div className="about-features">
             <div className="feature-item">
@@ -28,7 +29,19 @@ export default function About(){
           </div>
         </div>
         <div className="about-visual">
-          <div className="about-image"></div>
+          <div className="about-image">
+            <video
+              width={"100%"}
+              style={{ objectFit: "cover" }}
+              height={"100%"}
+              src={AboutVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="about-video"
+            />
+          </div>
         </div>
       </div>
     </section>
