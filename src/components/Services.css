@@ -77,7 +77,7 @@
   height: 1px; /* thickness of the line */
   background: rgb(68, 176, 176);
    left: 0;
-  animation: slide-line 5.5s linear infinite;
+  animation: slide-line 6.5s linear infinite;
   transition: left 0.4s ease;
 }
 
