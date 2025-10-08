@@ -135,9 +135,11 @@ export default function Navbar() {
           <li><a href="/services" onClick={() => setOpen(false)}>Services</a></li>
           <li><a href="/3D Models" onClick={() => setOpen(false)}>3D Models</a></li>
           <li><a href="/tempelates" onClick={() => setOpen(false)}>Tempelates</a></li>
-          <li><a href="/about" onClick={() => setOpen(false)}>About</a></li>
+          
+          <li><a href="/tools" onClick={() => setOpen(false)}>Tools</a></li>
           {/* <li><a href="#portfolio" onClick={() => setOpen(false)}>Portfolio</a></li>
           <li><a href="#team" onClick={() => setOpen(false)}>Team</a></li> */}
+          <li><a href="/about" onClick={() => setOpen(false)}>About Us</a></li>
           <li><a href="/contact" onClick={() => setOpen(false)}>Contact</a></li>
         </ul>
 

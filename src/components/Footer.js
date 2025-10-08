@@ -1,16 +1,17 @@
 import React from 'react';
 import './Footer.css';
 
-export default function Footer(){
+export default function Footer() {
   return (
     <footer>
       <div className="footer-content container">
         <div className="footer-brand">
-          <svg
+          <div>
+            <svg
             viewBox="0 0 400 100"
             xmlns="http://www.w3.org/2000/svg"
             width="100%"
-            height="50%"
+            height="35%"
           >
             {/* Background */}
 
@@ -120,21 +121,23 @@ export default function Footer(){
               opacity="0.3"
             />
           </svg>
-          <p>Leading the digital revolution with innovative technology solutions that transform businesses.</p>
+          </div>
+          <p style={{marginBottom:'1.5rem'}}>Leading the digital revolution with innovative technology 
+          <br></br> solutions that transform businesses  and create lasting value. <br></br> We blend creativity with technology, offering both free <br></br> community tools and premium client solutions.</p>
           <div className="social-links"><a href="#">f</a><a href="#">𝕏</a><a href="#">in</a><a href="#">ig</a></div>
         </div>
 
         <div className="footer-column">
-          <h4>Services</h4>
-          <div className="footer-links"><a href="#">Cloud Solutions</a><a href="#">AI & ML</a><a href="#">Cybersecurity</a></div>
+          <h4 style={{marginBottom:"1rem"}}>Services</h4>
+          <div className="footer-links"><a href="#">Cloud Solutions</a><a href="#">AI & ML</a><a href="#">Cybersecurity</a><a href="#">Data analytics</a><a href="#">DevOps</a></div>
         </div>
         <div className="footer-column">
-          <h4>Company</h4>
-          <div className="footer-links"><a href="#">About Us</a><a href="#">Portfolio</a><a href="#">Team</a></div>
+          <h4 style={{marginBottom:"1rem"}}>Company</h4>
+          <div className="footer-links"><a href="#">About Us</a><a href="#">Portfolio</a><a href="#">Team</a><a href="#">Careers</a><a href="#">Blogs</a></div>
         </div>
         <div className="footer-column">
-          <h4>Resources</h4>
-          <div className="footer-links"><a href="#">Documentation</a><a href="#">Case Studies</a><a href="#">Support</a></div>
+          <h4 style={{marginBottom:"1rem"}}>Resources</h4>
+          <div className="footer-links"><a href="#">Documentation</a><a href="#">Case Studies</a><a href="#">White Papers</a><a href="#">Support</a><a href="#">Contact</a></div>
         </div>
       </div>
       <div className="footer-bottom"><p>© 2025 ZeroWaveLabs. All rights reserved.</p></div>

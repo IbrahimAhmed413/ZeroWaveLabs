@@ -12,7 +12,7 @@ export default function Team(){
   return (
     <section id="team" className="team">
       <div className="section-header container">
-        <h2>Meet Our <span className="highlight">Team</span></h2>
+        <h2 style={{color:" var(--primary-cyan)"}}>Meet Our <span className="highlight">Team</span></h2>
         <p>Talented professionals dedicated to your success</p>
       </div>
       <div className="team-grid container">
