@@ -2,28 +2,34 @@ import React from 'react';
 import './Portfolio.css';
 
 const projects = [
-  {icon:'📧', title:'Email Automation System', desc:'Python-based automation scripts for scheduled emails', tags:['Python','SMTP','Automation']},
-  {icon:'🕷️', title:'Intelligent Web Scraper', desc:'Scrapers for structured data collection', tags:['Python','Selenium','Data Mining']},
-  {icon:'📊', title:'Data Generation Tools', desc:'Generate formatted datasets for ML and testing', tags:['Pandas','Faker']},
-  {icon:'🎯', title:'Lead Generation System', desc:'Automated lead collection and CRM integration', tags:['Automation','APIs']},
+  { icon: '📧', title: 'Email Automation System', desc: 'Built Python-based automation scripts that send scheduled emails with attachments and summaries, helping businesses streamline communication and save time.', tags: ['Python', 'SMTP', 'Automation', 'Scheduling'] },
+  { icon: '🕷️', title: 'Intelligent Web Scraper', desc: 'Developed intelligent web scrapers to collect structured data from websites for research, market insights, and competitive analysis.', tags: ['Python', 'Selenium', 'Data Mining', 'BeautifulSoup'] },
+  { icon: '📊', title: 'Data Generation Tools', desc: 'Created data generation tools that produce clean, formatted datasets for testing, machine learning models, and analytics projects.', tags: ['Python','Pandas', 'Faker','ML Datasets'] },
+  { icon: '🎯', title: 'Lead Generation System', desc: 'Delivered automated lead generation systems that collect potential client data from online sources, boosting sales pipelines for startups and agencies.', tags: ['Automation', 'CRM Integration', "Api's", 'Data Collection'] },
+  { icon: '💻', title: 'Responsive Websites', desc: 'Designed and developed responsive, user-friendly websites using HTML, CSS, JavaScript, and Bootstrap, tailored to client needs.', tags: ['HTML/CSS', 'JavaScript', 'Bootstrap', 'Responsive Design'] },
+  { icon: '📱', title: 'Mobile Applications', desc: 'Built cross-platform mobile apps with intuitive UX/UI, covering business tools, educational apps, and client-specific solutions.', tags: ['React-Native','Flutter', 'iOS/Android','UI/UX'] },
+  { icon: '🎮', title: '3D Models & Animations', desc: 'Crafted detailed 3D assets and animated content for games, ads, and YouTube channels, including characters, props, and environments.', tags: ['Blender','3D-Modeling', 'Animation','Game Assets'] },
+  { icon: '🛒', title: 'E-commerce Stores', desc: 'Developed complete online stores with product catalogs, shopping carts, and payment integrations, helping clients take their businesses online.', tags: ['WooCommerce','Shopify', 'Payment gateway','Inentory Management'] },
+  { icon: '📣', title: 'Digital Marketing Campaigns', desc: 'Executed successful branding and digital marketing campaigns, including social media ads, content creation, and promotional strategies to boost online visibility.', tags: ['Social Media','SEO', 'Content Marketing','Analytics'] },
+
 ];
 
-export default function Portfolio(){
+export default function Portfolio() {
   return (
     <section id="portfolio" className="portfolio">
       <div className="section-header container">
-        <h2>Our <span className="highlight" style={{color:" var(--primary-cyan)"}}>Project Portfolio</span></h2>
+        <p style={{ fontSize: '40px' }} >Our <span className="highlight" style={{ color: "#00d4ff" }}>Project Portfolio</span></p>
         <p>Real-world solutions we've delivered for our clients</p>
       </div>
       <div className="portfolio-grid container">
-        {projects.map((p,idx)=>(
+        {projects.map((p, idx) => (
           <div className="portfolio-item" key={idx}>
             <div className="portfolio-image">{p.icon}</div>
             <div className="portfolio-content">
-              <h3>{idx+1}️⃣ {p.title}</h3>
+              <h3>{idx + 1}️⃣ {p.title}</h3>
               <p>{p.desc}</p>
               <div className="portfolio-tags">
-                {p.tags.map((t,i)=>(<span className="tag" key={i}>{t}</span>))}
+                {p.tags.map((t, i) => (<span className="tag" key={i}>{t}</span>))}
               </div>
             </div>
           </div>

@@ -7,8 +7,9 @@ export default function About() {
     <section id="about" className="about">
       <div className="about-content container">
         <div className="about-text">
-          <h2 style={{ color: " var(--primary-cyan)" }}>About <span className="highlight">ZeroWaveLabs</span></h2>
-          <p className="lead">At <strong>ZeroWaveLabs</strong>, we believe great ideas should never be held back by limited resources.</p>
+          <p style={{ fontSize: '40px',marginBottom:'.5rem' }}>About <span className="highlight">ZeroWaveLabs</span></p>
+          <p className="lead">At <strong>ZeroWaveLabs</strong>, we believe great ideas should never be held back by limited resources. We empower developers, creators, and businesses with a perfect mix of <strong>free resources and professional services</strong>.</p>
+            <p style={{color:'#00d4ff', marginBottom:'1.5rem'}}>💡 <i>Make powerful tools, templates, and 3D assets accessible to everyone while delivering custom solutions for those who need more.</i></p>
           <div className="about-features">
             <div className="feature-item">
               <div className="feature-icon">🎁</div>

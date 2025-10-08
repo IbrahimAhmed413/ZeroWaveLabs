@@ -12,7 +12,7 @@ export default function TechStack(){
   return (
     <section className="tech-stack">
       <div className="section-header container">
-        <h2 style={{color:" var(--primary-cyan)"}}>Our <span className="highlight">Technology Stack</span></h2>
+        <h2>Our <span className="highlight">Technology Stack</span></h2>
         <p>We work with cutting-edge technologies to deliver exceptional results</p>
       </div>
       <div className="tech-categories container">

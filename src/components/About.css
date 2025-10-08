@@ -3,7 +3,9 @@
   padding: 3.5rem 0;
   background: linear-gradient(135deg, var(--primary-dark), var(--accent-dark))
 }
-
+.about-text .highlight{
+  color: #00d4ff ;
+}
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -23,6 +25,7 @@
 }
 
 .feature-item {
+  margin-bottom: 1.5rem;
   display: flex;
   gap: 1rem;
   align-items: flex-start

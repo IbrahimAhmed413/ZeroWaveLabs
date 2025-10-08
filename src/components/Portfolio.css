@@ -5,8 +5,13 @@
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2rem
+}
+
+.portfolio-grid :hover{
+    background-color: rgba(4, 30, 47, 0.1);
+  box-shadow: 0 0 35px 5px #041e2f;
 }
 .highlight{
   color: var(--primary-cyan);
@@ -29,7 +34,17 @@
 }
 
 .portfolio-content {
-  padding: 1rem
+  padding: 2rem
+}
+.portfolio-content h3 {
+  font-size: 24px;
+  margin-bottom: .5rem;
+  font-weight: 500
+}
+
+.portfolio-content p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem
 }
 
 .tag {
@@ -37,9 +52,10 @@
   color: var(--primary-cyan);
   padding: .25rem .6rem;
   border-radius: 12px;
-  margin-right: .4rem;
+  margin-right: .5rem;
   display: inline-block;
-  font-size: .85rem
+  font-size: .85rem;
+  margin-top: 1rem
 }
 
 /* Responsive adjustments */
