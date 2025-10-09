@@ -3,3 +3,6 @@ section {
     padding-top: 2rem;
     padding-bottom: 2rem
 }
+html, body {
+  overflow-x: hidden;
+}

@@ -129,8 +129,8 @@ export default function Navbar() {
             />
           </svg>
         </a>
-        <div className={open ? 'nav-links active' : 'nav-links'}>
-        <ul >
+
+        <ul className={open ? 'nav-links active' : 'nav-links'}>
           <li><a href="/" onClick={() => setOpen(false)}>Home</a></li>
           <li><a href="/services" onClick={() => setOpen(false)}>Services</a></li>
           <li><a href="/models" onClick={() => setOpen(false)}>3D Models</a></li>
@@ -141,7 +141,7 @@ export default function Navbar() {
           <li><a href="#team" onClick={() => setOpen(false)}>Team</a></li> */}
           <li><a href="/contact" onClick={() => setOpen(false)}>Contact</a></li>
         </ul>
-        </div>
+
         <a href="/contact" className="cta-button">Contact Us</a>
 
         <div className={open ? 'mobile-menu-toggle active' : 'mobile-menu-toggle'} onClick={() => setOpen(!open)}>
