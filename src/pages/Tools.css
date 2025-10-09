@@ -1,4 +1,4 @@
-/* Reset + Root Vars */
+Reset + Root Vars
 * {
     margin: 0;
     padding: 0;
@@ -83,7 +83,7 @@ nav {
     flex-direction: column;
 }
 
-.hero-content {
+.hero-contentt {
     max-width: 900px;
     /* keeps content from stretching too wide */
     margin: auto;

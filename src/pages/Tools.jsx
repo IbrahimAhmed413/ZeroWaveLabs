@@ -88,7 +88,7 @@ const Tools = () => {
     <div className="python-tools-page">
 
       <section className="hero">
-        <div className="hero-content">
+        <div className="hero-contentt">
           <h1>
             Free <span className="python">Python Tools</span> & Scripts
           </h1>
