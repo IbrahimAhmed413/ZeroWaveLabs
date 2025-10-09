@@ -1,0 +1,368 @@
+/* Reset + Root Vars */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-dark: #0a0e27;
+    --secondary-dark: #050714;
+    --accent-dark: #141829;
+    --hover-dark: #1e2341;
+    --primary-cyan: #00d4ff;
+    --python-yellow: #ffd43b;
+    --python-blue: #306998;
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.8);
+    --text-muted: rgba(255, 255, 255, 0.6);
+    --success: #10b981;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--secondary-dark);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 14, 39, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 5%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo-svg {
+    width: 280px;
+    height: 70px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary-cyan);
+}
+
+/* Hero */
+.hero {
+    margin-top: 70px;
+    padding: 2rem 5%;
+    background: linear-gradient(135deg, var(--primary-dark), var(--accent-dark), var(--primary-dark));
+    text-align: center;
+    /* center text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-content {
+    max-width: 900px;
+    /* keeps content from stretching too wide */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* center all children horizontally */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 0rem;
+}
+
+.hero h1 .python {
+    background: linear-gradient(90deg, var(--python-blue), var(--python-yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    max-width: 700px;
+}
+
+.code-preview {
+    background: var(--hover-dark);
+    border: 1px solid rgba(255, 212, 59, 0.2);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: left;
+    max-width: 700px;
+    width: 100%;
+    font-family: 'Courier New', monospace;
+    position: relative;
+}
+
+.code-preview::before {
+    content: 'Python';
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    color: var(--python-yellow);
+    font-size: .8rem;
+    opacity: .5;
+}
+
+.code-line {
+    margin: .3rem 0;
+    color: var(--text-secondary);
+}
+
+.code-keyword {
+    color: var(--python-yellow);
+}
+
+.code-string {
+    color: var(--success);
+}
+
+.code-comment {
+    color: var(--text-muted);
+}
+
+/* Categories */
+
+
+.category-card:hover {
+    background: rgba(0, 212, 255, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.1);
+}
+
+.category-icon {
+    font-size: 1.5rem;
+}
+
+.category-info h3 {
+    font-size: 1rem;
+    margin-bottom: .2rem;
+}
+
+.category-info p {
+    font-size: .8rem;
+    color: var(--text-muted);
+}
+
+/* Tools Grid */
+.tools-section {
+    padding: 4rem 5%;
+    background: var(--secondary-dark);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.section-header .highlight {
+    color: var(--primary-cyan);
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.tool-card {
+    background: var(--accent-dark);
+    border: 1px solid rgba(0, 212, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.1);
+    border-color: var(--primary-cyan);
+}
+
+.tool-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.tool-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--python-blue), var(--python-yellow));
+    font-size: 24px;
+}
+
+.tool-badge {
+    background: rgba(255, 212, 59, 0.2);
+    color: var(--python-yellow);
+    padding: .3rem .8rem;
+    border-radius: 15px;
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+.tool-name {
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+}
+
+.tool-category {
+    color: var(--primary-cyan);
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+
+.tool-description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.tool-features {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.tool-features li {
+    font-size: .9rem;
+    color: var(--text-muted);
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: .3rem;
+}
+
+.tool-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--success);
+}
+
+.tool-actions {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.btn-download-py {
+    flex: 1;
+    background: linear-gradient(90deg, var(--python-blue), var(--python-yellow));
+    color: #fff;
+    padding: .8rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-download-py:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 212, 59, 0.3);
+}
+
+.btn-github,
+.btn-tutorial {
+    padding: .8rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-github {
+    border: 1px solid var(--primary-cyan);
+    color: var(--primary-cyan);
+}
+
+.btn-github:hover {
+    background: rgba(0, 212, 255, 0.1);
+}
+
+.btn-tutorial {
+    background: rgba(0, 212, 255, 0.1);
+    color: var(--primary-cyan);
+    border: 1px solid transparent;
+}
+
+.btn-tutorial:hover {
+    border-color: var(--primary-cyan);
+}
+
+/* Stats */
+.stats-banner {
+    padding: 3rem 5%;
+    background: linear-gradient(90deg, var(--primary-dark), var(--accent-dark));
+    text-align: center;
+}
+
+.stats-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    color: var(--python-yellow);
+    font-weight: 600;
+}
+
+.stat-label {
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+/* Footer */
+.footer {
+    padding: 3rem 5%;
+    background: var(--primary-dark);
+    border-top: 1px solid rgba(0, 212, 255, 0.1);
+}

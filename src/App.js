@@ -8,6 +8,7 @@ import './App.css';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import TemplatesPage from './pages/TempelatesPage';
+import Tools from './pages/Tools';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/models" element={<Models />} />
           <Route path="/tempelates" element={<TemplatesPage />} />
+          <Route path="/tools" element={<Tools />} />
         </Routes>
         <Footer />
       </Router>

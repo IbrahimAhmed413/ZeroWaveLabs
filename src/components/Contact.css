@@ -1,7 +1,8 @@
 .contact {
   margin-top: 70px;
-  padding: 3.5rem 0;
-background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.1), transparent);}
+  background: linear-gradient(135deg, #0a0e27 0, #141829 50%, #0a0e27 100%);
+}
+
 
 .contact-content {
   display: grid;
