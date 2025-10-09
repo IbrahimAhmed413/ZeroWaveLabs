@@ -137,19 +137,19 @@
 
 @keyframes pulsee {
   0% {
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.6);
     /* smaller */
     box-shadow: 0 0 50px rgba(0, 212, 255, 0.4);
   }
 
   50% {
-    transform: translate(-50%, -50%) scale(1.0);
+    transform: translate(-50%, -50%) scale(0.9);
     /* bigger */
     box-shadow: 0 0 120px rgba(0, 212, 255, 0.8);
   }
 
   100% {
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.6);
     /* back to smaller */
     box-shadow: 0 0 50px rgba(0, 212, 255, 0.4);
   }
