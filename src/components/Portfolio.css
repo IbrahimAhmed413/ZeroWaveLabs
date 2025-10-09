@@ -11,7 +11,7 @@
 
 .portfolio-grid :hover{
     background-color: rgba(4, 30, 47, 0.1);
-  box-shadow: 0 0 35px 5px #041e2f;
+    box-shadow: 0 0 35px 5px #084771;
 }
 .highlight{
   color: var(--primary-cyan);
