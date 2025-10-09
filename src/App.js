@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Services from './components/Services';
 import Contact from './components/Contact';
+import TemplatesPage from './pages/TempelatesPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/models" element={<Models />} />
+          <Route path="/tempelates" element={<TemplatesPage />} />
         </Routes>
         <Footer />
       </Router>

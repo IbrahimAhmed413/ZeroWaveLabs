@@ -1,5 +1,6 @@
 :root {
-  --bg-dark: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent-dark) 50%, var(--primary-dark) 100%);;
+  --bg-dark: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent-dark) 50%, var(--primary-dark) 100%);
+  ;
   --card-bg: #0507142;
   --border-glow: #00d4ff;
   --text-light: rgba(255, 255, 255, 0.9);
@@ -16,8 +17,8 @@ body {
 .models-container {
   text-align: center;
   padding: 3rem 6rem;
-  background-color: #050714;
-  border-top: 1px solid rgb(12, 46, 46);
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent-dark) 50%, var(--primary-dark) 100%);
+  /* border-top: 1px solid rgb(12, 46, 46); */
 }
 
 .section-title {
