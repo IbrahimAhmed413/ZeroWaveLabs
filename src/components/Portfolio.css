@@ -9,11 +9,12 @@
   gap: 2rem
 }
 
-.portfolio-grid :hover{
-    background-color: rgba(4, 30, 47, 0.1);
-    box-shadow: 0 0 35px 5px #084771;
+.portfolio-grid :hover {
+  background-color: rgba(4, 30, 47, 0.1);
+  box-shadow: 0 0 35px 5px #084771;
 }
-.highlight{
+
+.highlight {
   color: var(--primary-cyan);
 }
 
@@ -21,7 +22,12 @@
   background: var(--accent-dark);
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(0, 212, 255, 0.06)
+  border: 1px solid rgba(0, 212, 255, 0.06);
+
+}
+
+.portfolio-item * {
+  pointer-events: none;
 }
 
 .portfolio-image {
@@ -36,6 +42,7 @@
 .portfolio-content {
   padding: 2rem
 }
+
 .portfolio-content h3 {
   font-size: 24px;
   margin-bottom: .5rem;
