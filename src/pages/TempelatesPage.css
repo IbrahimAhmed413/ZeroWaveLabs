@@ -84,10 +84,10 @@
   position: absolute;
   width: 150%;
   height: 150%;
-  background: repeating-conic-gradient(from 0deg at 50% 50%, 
+  /* background: repeating-conic-gradient(from 0deg at 50% 50%, 
       transparent 0deg, 
       rgba(0, 212, 255, 0.03) 10deg, 
-      transparent 20deg);
+      transparent 20deg); */
   animation: rotate 60s linear infinite;
 }
 
