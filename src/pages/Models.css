@@ -1,0 +1,42 @@
+.main_div {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent-dark) 50%, var(--primary-dark) 100%);
+}
+
+.main_div h2 {
+    font-size: 48px;
+}
+
+.main_div .main_heading {
+    color: #00d4ff;
+}
+
+.main_div .writing {
+    font-size: 19.2px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.stats{
+ display: flex;
+  justify-content: center; /* horizontally centers all items */
+  align-items: center;     /* vertically centers all items */
+  flex-direction: row;
+  gap: 3rem;               /* adds spacing between each stats_main */
+  margin-top: 0px;
+  padding:2rem ;
+}
+.stats_main{
+    margin-top: 0rem;
+}
+.stats_main p {
+    color: #00d4ff;
+    font-size: 32px;
+    
+}
+
+.stats_main .changep {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}

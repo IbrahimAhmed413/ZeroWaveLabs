@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
       <div className="nav-container container">
-        <a href="#home" className="logo">
+        <a href="/" className="logo">
           <svg
             viewBox="0 0 400 100"
             xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@ export default function Navbar() {
         <ul className={open ? 'nav-links active' : 'nav-links'}>
           <li><a href="/" onClick={() => setOpen(false)}>Home</a></li>
           <li><a href="/services" onClick={() => setOpen(false)}>Services</a></li>
-          <li><a href="/3D Models" onClick={() => setOpen(false)}>3D Models</a></li>
+          <li><a href="/models" onClick={() => setOpen(false)}>3D Models</a></li>
           <li><a href="/tempelates" onClick={() => setOpen(false)}>Tempelates</a></li>
           
           <li><a href="/tools" onClick={() => setOpen(false)}>Tools</a></li>
