@@ -84,7 +84,7 @@
   background: var(--primary-cyan)
 }
 
-@media(max-width:968px) {
+@media(max-width:768px) {
     .navbar{
       width: 100vw;
     }
