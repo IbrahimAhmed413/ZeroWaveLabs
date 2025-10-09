@@ -46,27 +46,38 @@
   gap: 1rem
 }
 
-.btn-primary {
+.btnn-primary {
   background: linear-gradient(90deg, var(--dark-cyan), var(--primary-cyan));
   color: var(--primary-dark);
-  padding: .9rem 1.8rem;
+  padding: 0.9rem 1.8rem;
   border-radius: 30px;
   border: none;
   font-weight: 600;
-  text-decoration: none ;
-  cursor: pointer
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease; /* smooth animation */
+}
+
+.btnn-primary:hover {
+  transform: translateY(-4px); /* move up */
+  box-shadow: 0 8px 20px rgba(0, 212, 255, 0.4); /* glowing shadow */
 }
 
 .btn-secondary {
   background: transparent;
   color: var(--primary-cyan);
-  padding: .9rem 1.8rem;
+  padding: 0.9rem 1.8rem;
   border: 2px solid var(--primary-cyan);
   border-radius: 30px;
   text-decoration: none;
-  cursor: pointer
+  cursor: pointer;
+  transition: all 0.3s ease; /* smooth hover */
 }
 
+.btn-secondary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 212, 255, 0.4);
+}
 .heroo-visual {
   display: flex;
   justify-content: center;
@@ -121,23 +132,28 @@
   border-radius: 50%;
   box-shadow: 0 0 80px rgba(0, 212, 255, 0.5),
     inset 0 0 30px rgba(0, 240, 255, 0.3);
-  animation: pulse 3s ease-in-out infinite;
+  animation: pulsee 6s ease-in-out infinite;
 }
 
-@keyframes pulse {
-
-  0%,
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-    box-shadow: 0 0 80px rgba(0, 212, 255, 0.5);
+@keyframes pulsee {
+  0% {
+    transform: translate(-50%, -50%) scale(0.9);
+    /* smaller */
+    box-shadow: 0 0 50px rgba(0, 212, 255, 0.4);
   }
 
   50% {
-    transform: translate(-50%, -50%) scale(1.08);
-    box-shadow: 0 0 100px rgba(0, 212, 255, 0.7);
+    transform: translate(-50%, -50%) scale(1.2);
+    /* bigger */
+    box-shadow: 0 0 120px rgba(0, 212, 255, 0.8);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(0.9);
+    /* back to smaller */
+    box-shadow: 0 0 50px rgba(0, 212, 255, 0.4);
   }
 }
-
 
 @media(max-width:768px) {
   .heroo-content {
@@ -167,7 +183,7 @@
     gap: 0.5rem;
   }
 
-  .btn-primary,
+  .btnn-primary,
   .btn-secondary {
     width: 100%;
   }
