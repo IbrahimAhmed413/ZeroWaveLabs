@@ -130,9 +130,9 @@
 }
 
 .tag {
-  /* background: rgba(0, 212, 255, 0.06);
-  color: var(--primary-cyan); */
-  padding: 0.25rem 0.6rem;
+  /* background: rgba(0, 212, 255, 0.06);*/
+  color: var(--primary-cyan); 
+   padding: 0.25rem 0.6rem;
   border-radius: 12px;
   margin-right: 0.5rem;
   /* display: inline-block; */
