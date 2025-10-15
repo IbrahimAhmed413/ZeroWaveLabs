@@ -130,12 +130,12 @@
 }
 
 .tag {
-  background: rgba(0, 212, 255, 0.06);
-  color: var(--primary-cyan);
+  /* background: rgba(0, 212, 255, 0.06);
+  color: var(--primary-cyan); */
   padding: 0.25rem 0.6rem;
   border-radius: 12px;
   margin-right: 0.5rem;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 0.85rem;
   margin-top: 1rem;
   white-space: nowrap;

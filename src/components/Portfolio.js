@@ -26,17 +26,20 @@ export default function Portfolio() {
         </p>
         <p>Real-world solutions we've delivered for our clients</p>
       </div>
-      <div className="portfolio-grid container" >
+
+      <div className="portfolio-grid container">
         <Swiper
           modules={[Pagination, Autoplay]}
           slidesPerView={3}
+          slidesPerGroup={6}  
           spaceBetween={20}
+          scrollbar={{ draggable: true }}
           pagination={{ clickable: true }}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          autoplay={{ delay: 6000, disableOnInteraction: false }}
           breakpoints={{
-            1024: { slidesPerView: 3 },
-            768: { slidesPerView: 2 },
-            450: { slidesPerView: 1 },
+            1024: { slidesPerView: 3, slidesPerGroup: 3 },
+            768: { slidesPerView: 2, slidesPerGroup: 2 },
+            430: { slidesPerView: 1, slidesPerGroup: 1 },
           }}
         >
           {projects.map((p, idx) => (
