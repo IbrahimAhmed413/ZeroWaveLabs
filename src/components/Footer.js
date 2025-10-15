@@ -124,7 +124,7 @@ export default function Footer() {
           </div>
           <p style={{marginBottom:'1.5rem'}}>Leading the digital revolution with innovative technology 
           <br></br> solutions that transform businesses  and create lasting value. <br></br> We blend creativity with technology, offering both free <br></br> community tools and premium client solutions.</p>
-          <div className="social-links"><a href="#">f</a><a href="#">𝕏</a><a href="#">in</a><a href="#">ig</a></div>
+          <div className="social-links"><a href="#"><u>f</u></a><a href="#"><u>𝕏</u></a><a href="#"><u>in</u></a><a href="#"><u>ig</u></a></div>
         </div>
 
         <div className="footer-column">

@@ -5,11 +5,11 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
+    const onScroll = () => setScrolled(window.scrollY > 5);
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
+ 
   return (
     <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
       <div className="nav-container container">
@@ -17,7 +17,7 @@ export default function Navbar() {
           <svg
             viewBox="0 0 400 100"
             xmlns="http://www.w3.org/2000/svg"
-            width="60%"
+            width="75%"
             height="100%"
           >
             {/* Background */}
@@ -135,7 +135,7 @@ export default function Navbar() {
           <li><a href="/services" onClick={() => setOpen(false)}>Services</a></li>
           <li><a href="/models" onClick={() => setOpen(false)}>3D Models</a></li>
           <li><a href="/tempelates" onClick={() => setOpen(false)}>Tempelates</a></li>
-          
+
           <li><a href="/tools" onClick={() => setOpen(false)}>Tools</a></li>
           {/* <li><a href="#portfolio" onClick={() => setOpen(false)}>Portfolio</a></li>
           <li><a href="#team" onClick={() => setOpen(false)}>Team</a></li> */}
