@@ -9,7 +9,7 @@ export default function Navbar() {
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
- 
+
   return (
     <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
       <div className="nav-container container">
@@ -142,7 +142,10 @@ export default function Navbar() {
           <li><a href="/contact" onClick={() => setOpen(false)}>Contact</a></li>
         </ul>
 
-        <a href="/contact" className="cta-button">Contact Us</a>
+        <a href="https://wa.me/923332797617"
+          className="cta-button"
+          target="_blank"
+          rel="noopener noreferrer">Contact Us</a>
 
         <div className={open ? 'mobile-menu-toggle active' : 'mobile-menu-toggle'} onClick={() => setOpen(!open)}>
           <span></span><span></span><span></span>
