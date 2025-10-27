@@ -21,7 +21,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="portfolio">
       <div className="section-header container">
-        <p style={{ fontSize: '40px' }}>
+        <p style={{ fontSize: '40px' }} id='portfolio'>
           Our <span className="highlight" style={{ color: "#00d4ff" }}>Project Portfolio</span>
         </p>
         <p>Real-world solutions we've delivered for our clients</p>

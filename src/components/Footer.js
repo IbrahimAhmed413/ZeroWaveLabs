@@ -129,15 +129,15 @@ export default function Footer() {
 
         <div className="footer-column">
           <h4 style={{marginBottom:"1rem"}}>Services</h4>
-          <div className="footer-links"><a href="#">Cloud Solutions</a><a href="#">AI & ML</a><a href="#">Cybersecurity</a><a href="#">Data analytics</a><a href="#">DevOps</a></div>
+          <div className="footer-links"><a href="/services">Cloud Solutions</a><a href="/services">AI & ML</a><a href="/services">Cybersecurity</a><a href="/services">Data analytics</a><a href="/services">DevOps</a></div>
         </div>
         <div className="footer-column">
           <h4 style={{marginBottom:"1rem"}}>Company</h4>
-          <div className="footer-links"><a href="#">About Us</a><a href="#">Portfolio</a><a href="#">Team</a><a href="#">Careers</a><a href="#">Blogs</a></div>
+          <div className="footer-links"><a href="/#portfolio">About Us</a><a href="/#portfolio">Portfolio</a><a href="#">Team</a><a href="#"></a><a href="#"></a></div>
         </div>
         <div className="footer-column">
           <h4 style={{marginBottom:"1rem"}}>Resources</h4>
-          <div className="footer-links"><a href="#">Documentation</a><a href="#">Case Studies</a><a href="#">White Papers</a><a href="#">Support</a><a href="#">Contact</a></div>
+          <div className="footer-links"><a href="/models">3D Models</a><a href="/tempelates">Tempelates</a><a href="/tools">Tools</a><a href="#"></a><a href="#"></a></div>
         </div>
       </div>
       <div className="footer-bottom"><p>© 2025 ZeroWaveLabs. All rights reserved.</p></div>
