@@ -264,7 +264,7 @@ body {
 
 .btn-download-py:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(255, 212, 59, 0.3);
+    box-shadow: 0 10px 20px var(--primary-cyan);
 }
 
 .btn-github,
