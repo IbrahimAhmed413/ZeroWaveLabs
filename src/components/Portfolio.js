@@ -1,4 +1,3 @@
-import React from 'react';
 import './Portfolio.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';

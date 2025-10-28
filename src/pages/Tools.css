@@ -1,5 +1,4 @@
-Reset + Root Vars
-* {
+Reset+Root Vars * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,8 +10,8 @@ Reset + Root Vars
     --accent-dark: #141829;
     --hover-dark: #1e2341;
     --primary-cyan: #00d4ff;
-    --python-yellow: #ffd43b;
-    --python-blue: #306998;
+    --primary-cyan: #ffd43b;
+    --primary-cyan: #306998;
     --text-primary: #ffffff;
     --text-secondary: rgba(255, 255, 255, 0.8);
     --text-muted: rgba(255, 255, 255, 0.6);
@@ -63,10 +62,12 @@ body {
 }
 
 .hero h1 .python {
-    background: linear-gradient(90deg, var(--python-blue), var(--python-yellow));
+    background: linear-gradient(90deg, var(--primary-cyan), var(--primary-cyan));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
+        color: var();
+
 }
 
 .hero p {
@@ -93,7 +94,7 @@ body {
     position: absolute;
     top: .5rem;
     right: 1rem;
-    color: var(--python-yellow);
+    color: var(--primary-cyan);
     font-size: .8rem;
     opacity: .5;
 }
@@ -104,7 +105,7 @@ body {
 }
 
 .code-keyword {
-    color: var(--python-yellow);
+    color: var(--primary-cyan);
 }
 
 .code-string {
@@ -195,16 +196,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--python-blue), var(--python-yellow));
+    background: linear-gradient(135deg, var(--primary-cyan), var(--primary-cyan));
     font-size: 24px;
 }
 
 .tool-badge {
-    background: rgba(255, 212, 59, 0.2);
-    color: var(--python-yellow);
-    padding: .3rem .8rem;
+    background: var(--primary-cyan);
+    padding: .9rem .8rem;
     border-radius: 15px;
-    font-size: .75rem;
+    font-size: 0.75rem;
     font-weight: 600;
 }
 
@@ -253,7 +253,7 @@ body {
 
 .btn-download-py {
     flex: 1;
-    background: linear-gradient(90deg, var(--python-blue), var(--python-yellow));
+    background: linear-gradient(90deg, var(--primary-cyan), var(--primary-cyan));
     color: #fff;
     padding: .8rem;
     border: none;
@@ -313,7 +313,7 @@ body {
 
 .stat-number {
     font-size: 2.5rem;
-    color: var(--python-yellow);
+    color: var(--primary-cyan);
     font-weight: 600;
 }
 
