@@ -1,5 +1,4 @@
 import "./Tools.css";
-
 const categories = [
   { icon: "📧", title: "Automation", tools: "15 Tools" },
   { icon: "📊", title: "Data Processing", tools: "12 Tools" },
@@ -10,9 +9,9 @@ const categories = [
 
 const tools = [
   {
-    icon: "📧",
+    icon: "🖼️",
     badge: "POPULAR",
-    name: "Email Automation Suite",
+    name: "Background Remover",
     category: "Automation",
     desc: "Complete email automation system with scheduling, templates, and bulk sending capabilities.",
     features: [
@@ -26,7 +25,7 @@ const tools = [
   {
     icon: "🕷️",
     badge: "NEW",
-    name: "Smart Web Scraper",
+    name: "Scraper",
     category: "Web Scraping",
     desc: "Intelligent web scraper with BeautifulSoup and Selenium support.",
     features: [
@@ -40,7 +39,7 @@ const tools = [
   {
     icon: "📊",
     badge: "FEATURED",
-    name: "Test Data Generator",
+    name: "Data Visualization",
     category: "Data Processing",
     desc: "Generate realistic test data for development and testing.",
     features: [
@@ -52,9 +51,37 @@ const tools = [
     actions: { github: false, tutorial: true },
   },
   {
-    icon: "🎯",
+    icon: "📸",
     badge: "PRO",
-    name: "Lead Generation Bot",
+    name: "Image Compressor",
+    category: "Automation",
+    desc: "Automated lead generation from multiple sources.",
+    features: [
+      "Multi-source collection",
+      "Email validation",
+      "Data enrichment APIs",
+      "CRM export ready",
+    ],
+    actions: { github: true, tutorial: true },
+  },
+   {
+    icon: "🔳",
+    badge: "PRO",
+    name: "QR code Generator",
+    category: "Automation",
+    desc: "Automated lead generation from multiple sources.",
+    features: [
+      "Multi-source collection",
+      "Email validation",
+      "Data enrichment APIs",
+      "CRM export ready",
+    ],
+    actions: { github: true, tutorial: true },
+  },
+   {
+    icon: "🎥",
+    badge: "PRO",
+    name: "Screen Recorder",
     category: "Automation",
     desc: "Automated lead generation from multiple sources.",
     features: [
