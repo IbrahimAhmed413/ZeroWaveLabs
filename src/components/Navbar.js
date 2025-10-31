@@ -142,7 +142,7 @@ export default function Navbar() {
           <li><a href="/contact" onClick={() => setOpen(false)}>Contact</a></li>
         </ul>
 
-        <a href="https://wa.me/44 7508 898159"
+        <a href="https://wa.me/+447508898159"
           className="cta-button"
           target="_blank"
           rel="noopener noreferrer">Contact Us</a>
