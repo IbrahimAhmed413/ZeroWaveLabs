@@ -14,7 +14,7 @@ export default function heroo(){
             We blend <strong>creativity with technology</strong>, offering both <strong>free community tools </strong> and <strong>premium client solutions</strong> under one roof.
           </p>
           <div className="heroo-buttons">
-              <a className='btnn-primary' href='/contact'>Contact Us</a>
+              <a className='btnn-primary' href="https://wa.me/44 7508 898159">Contact Us</a>
             <a className='btn-secondary' href='#portfolio'>View Our Work</a>
           </div>
         </div>

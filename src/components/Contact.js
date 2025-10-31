@@ -14,7 +14,7 @@ export default function Contact(){
           <p>Whether you're looking to modernize your infrastructure or implement AI solutions, we're here to help.</p>
           <div className="contact-details">
             <div className="contact-item"><div className="contact-icon">📧</div><div className="contact-text"><h4>Email</h4><p>hello@zerowavelabs.com</p></div></div>
-            <div className="contact-item"><div className="contact-icon">📱</div><div className="contact-text"><h4>Phone</h4><p>+44 7508 898159</p></div></div>
+            <div className="contact-item"><div className="contact-icon">📱</div><div className="contact-text"><h4>Phone</h4><p>+92 333 279 7617</p></div></div>
             <div className="contact-item"><div className="contact-icon">📍</div><div className="contact-text"><h4>Location</h4><p>Islamabad</p></div></div>
           </div>
         </div>
