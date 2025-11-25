@@ -13,11 +13,12 @@ import './App.css';
 import CsvChartTab from './components/scraper/CsvChartTab';
 import ManualPieChart from './components/scraper/ManualPieChart';
 import SurveyCorrelation from './components/scraper/SurveyCorreletion';
+import Crawler from './pages/Crawler';
 function App() {
   const location = useLocation();
 
   // Paths where Navbar + Footer should NOT appear
-  const noLayoutPaths = ['/Scraper','/csv','/text','/pie', '/survey'];
+  const noLayoutPaths = ['/Scraper','/csv','/text','/pie', '/survey','/Data-Visualization'];
 
   const hideLayout = noLayoutPaths.includes(location.pathname);
 
@@ -33,11 +34,13 @@ function App() {
         <Route path="/models" element={<Models />} />
         <Route path="/tempelates" element={<TemplatesPage />} />
         <Route path="/tools" element={<Tools />} />
-        <Route path="/Scraper" element={<Scrapper />} />
+        <Route path="/Data-Visualization" element={<Scrapper />} />
         <Route path="/csv" element={<CsvChartTab/>} />
         <Route path="/text" element={<TextAnalysis/>} />
         <Route path="/pie" element={<ManualPieChart/>} />
         <Route path="/survey" element={<SurveyCorrelation/>} />
+        <Route path="/Scraper" element={<Crawler/>} />
+
       </Routes>
 
       {/* Conditionally render Footer */}

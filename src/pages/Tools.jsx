@@ -41,7 +41,7 @@ const tools = [
   {
     icon: "📊",
     badge: "FEATURED",
-    name: "Data Visualization",
+    name: "Data-Visualization",
     category: "Data Processing",
     desc: "Generate realistic test data for development and testing.",
     features: [
@@ -105,7 +105,7 @@ const stats = [
 const Tools = () => {
     const navigate = useNavigate();
   const handleDownload = (name) => {
-    navigate(`/${name}`);
+    navigate(`/${name.slice()}`);
   };
 
   const handleCategoryClick = (category) => {
