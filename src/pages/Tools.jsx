@@ -1,4 +1,6 @@
+import {useNavigate } from "react-router-dom";
 import "./Tools.css";
+import { use } from "react";
 const categories = [
   { icon: "📧", title: "Automation", tools: "15 Tools" },
   { icon: "📊", title: "Data Processing", tools: "12 Tools" },
@@ -34,7 +36,7 @@ const tools = [
       "Data export to JSON/CSV",
       "Rate limiting built-in",
     ],
-    actions: { github: true, tutorial: false },
+    actions: { github: true, tutorial: true },
   },
   {
     icon: "📊",
@@ -48,7 +50,7 @@ const tools = [
       "Multiple export formats",
       "Relationship handling",
     ],
-    actions: { github: false, tutorial: true },
+    actions: { github: true, tutorial: true },
   },
   {
     icon: "📸",
@@ -100,10 +102,10 @@ const stats = [
   { number: "100%", label: "Open Source" },
   { number: "24/7", label: "Support" },
 ];
-
 const Tools = () => {
+    const navigate = useNavigate();
   const handleDownload = (name) => {
-    alert(`Downloading ${name}.py\n\nThank you for using ZeroWaveLabs Python tools!`);
+    navigate(`/${name}`);
   };
 
   const handleCategoryClick = (category) => {
@@ -155,10 +157,9 @@ const Tools = () => {
                   className="btn-download-py"
                   onClick={() => handleDownload(tool.name)}
                 >
-                  Download .py
+                 Use. py
                 </button>
-                {tool.actions.github && <a href="#" className="btn-github">GitHub</a>}
-                {tool.actions.tutorial && <a href="#" className="btn-tutorial">Tutorial</a>}
+                {tool.actions.tutorial && <a href="#" className="btn-tutorial">How to use</a>}
               </div>
             </div>
           ))}
