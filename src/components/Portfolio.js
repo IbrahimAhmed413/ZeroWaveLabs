@@ -38,7 +38,7 @@ export default function Portfolio() {
           breakpoints={{
             1024: { slidesPerView: 3, slidesPerGroup: 3 },
             768: { slidesPerView: 2, slidesPerGroup: 2 },
-            430: { slidesPerView: 1, slidesPerGroup: 1 },
+            0: { slidesPerView: 1, slidesPerGroup: 1 },
           }}
         >
           {projects.map((p, idx) => (

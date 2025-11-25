@@ -11,16 +11,6 @@ export default function Scraper() {
         <>
             <div className="app-wrapper">
                 <Navbar />
-
-                {/* <div className="main-content">
-                    <Routes>
-                        <Route path="/csv" element={<CsvChartTab />} />
-                        <Route path="/text" element={<TextAnalysis />} />
-                        <Route path="/pie" element={<ManualPieChart />} />
-                        <Route path="/Scraper" element={<SurveyCorrelation />} />
-                        <Route path="*" element={<Navigate to="/tools" replace />} />
-                    </Routes>
-                </div> */}
             </div>
         </>
     )
